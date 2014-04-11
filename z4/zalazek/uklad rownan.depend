@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1396870459 source:/home/adam/Desktop/zad/z4/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+
+1396870282 /home/adam/Desktop/zad/z4/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1396858438 /home/adam/Desktop/zad/z4/zalazek/inc/rozmiar.h
+
+1396868341 source:/home/adam/Desktop/zad/z4/zalazek/src/main.cpp
+	<iostream>
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/UkladRownanLiniowych.hh"
+
+1396870370 /home/adam/Desktop/zad/z4/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+
+1396858438 /home/adam/Desktop/zad/z4/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+
+1396862249 source:/home/adam/Desktop/zad/z4/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1396870542 source:/home/adam/Desktop/zad/z4/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+

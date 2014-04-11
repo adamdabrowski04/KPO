@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1396827884 source:/home/adam/Desktop/zad/z3/zalazek/src/main.cpp
+	<iostream>
+	<stdio.h>
+	"../inc/WyrazenieAlgeb.hh"
+	"../inc/Statystyka.hh"
+	"../inc/Symbol.hh"
+
+1396824509 /home/adam/Desktop/zad/z3/zalazek/inc/WyrazenieAlgeb.hh
+	"../inc/Symbol.hh"
+	"../inc/Statystyka.hh"
+
+1396802551 /home/adam/Desktop/zad/z3/zalazek/inc/Symbol.hh
+	<iostream>
+	<iomanip>
+	<string>
+
+1396821976 /home/adam/Desktop/zad/z3/zalazek/inc/Statystyka.hh
+	<iostream>
+	<iomanip>
+
+1396825695 source:/home/adam/Desktop/zad/z3/zalazek/src/Statystyka.cpp
+	"../inc/Statystyka.hh"
+
+1396828737 source:/home/adam/Desktop/zad/z3/zalazek/src/Symbol.cpp
+	"../inc/Symbol.hh"
+
+1396828737 source:/home/adam/Desktop/zad/z3/zalazek/src/WyrazenieAlgeb.cpp
+	"../inc/WyrazenieAlgeb.hh"
+	"../inc/Statystyka.hh"
+

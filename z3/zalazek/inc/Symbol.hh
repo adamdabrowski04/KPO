@@ -1,0 +1,148 @@
+#ifndef SYMBOL_HH
+#define SYMBOL_HH
+
+#include<iostream>
+#include<iomanip>
+#include <string>
+
+enum Symbol { e, a, b, c, d };
+
+enum ZnakDzial { s , r , iloczyn , iloraz};
+using namespace std;
+
+/*
+  Deklaracja funkcji: Dodaj, OdwrotnyDodawania, Odejmij, Mnoz, OdwrotnyMnozenia, Dziel.
+*/
+/*!
+ *\brief Funkcja sumująca dwa elementy
+ *
+ * PRE: brak
+ * POST: funkcja zwraca element typu Symbol
+ * Funkcja dodaje dwa elementy zwracajac odpowiedni element
+ * z tablicy dodawania
+ *
+ */
+Symbol dodaj(Symbol pierwszy, Symbol drugi);
+
+/*!
+ *\brief Funkcja odejmujaca dwa elementy
+ *
+ * PRE: brak
+ * POST: funkcja zwraca element typu Symbol
+ * Funkcja odejmuje dwa elementy dodajac do elementu pierwszego odwrotność
+ * elementu drugie względem operacji dodawania
+ *
+ */
+Symbol odejmij(Symbol pierwszy, Symbol drugi);
+
+ /*!
+ *\brief Funkcja mnożąca dwa elementy
+ * PRE: brak
+ * POST: funkcja zwraca element typu Symbol
+ * Funkcja mnoży dwa elementy zwracajac odpowiedni element z tablicy mnożenia
+ *
+ */
+Symbol mnoz(Symbol pierwszy, Symbol drugi);
+
+/*!
+ *\brief Funkcja dzieląca dwa elementy
+ *
+ * PRE: dzielnik nie może być elementem zerowym
+ * POST: funkcja zwraca element typu Symbol, jezeli dzielnik jest zerowy
+ *        zwraca zerowy element nie wykonujac zadnych operacji
+ * Funkcja dzieli pierwszy element przez drugi mnożąc element pierwszy przez odwrotność
+ * elementu drugie względem operacji mnożenia
+ *
+ */
+Symbol dziel(Symbol dzielna, Symbol dzielnik);
+
+
+/*
+  Deklaracja przeciążeń operatorów
+*/
+
+/*!
+ *\brief Przeciążenie operatora mnożenia
+ *
+ * Funkcja wywołuje funkcje mnoz i zwraca jej wynik
+ */
+Symbol operator*(Symbol pierwszy, Symbol drugi);
+
+/*!
+ *\brief Przeciążenie operatora dzielenia
+ *
+ * Funkcja wywołuje funkcje dziel i zwraca jej wynik
+ */
+Symbol operator/(Symbol dzielna, Symbol dzielnik);
+
+/*!
+ *\brief Przeciążenie operatora dodawania
+ *
+ * Funkcja wywołuje funkcje dodaj i zwraca jej wynik
+ */
+Symbol operator+(Symbol pierwszy, Symbol drugi);
+
+/*!
+ *\brief Przeciążenie operatora odejmowania
+ *
+ * Funkcja wywołuje funkcje odejmij i zwraca jej wynik
+ */
+Symbol operator-(Symbol pierwszy, Symbol drugi);
+
+/*!
+ *\brief Przeciążenie operatora elementu odwrotnego
+ *
+ * Funkcja zwraca element odwrotny wzgledem operacji dodawania
+ */
+Symbol operator-(Symbol element);
+
+
+/*!
+ *\brief Przeciążenie operatora wypisywania na wybrany strumień
+ *PRE: BRAK
+ *POST: funkcja zwraca referencję do strumienia wczytaną jako jeden z parametrów
+ *
+ *ARGUMENTY: strm - strumien do którego zostanie wpisany Symbol
+ *           a    - Symbol do wypisania
+ *
+ */
+ostream& operator<<(ostream& strm, Symbol a);
+
+/*!
+ *\brief Przeciążenie operatora wczytywania ze standardowego wejścia
+ *PRE: BRAK
+ *POST: funkcja zwraca referencję do strumienia wczytaną jako jeden z parametrów
+ *      w przypadku błędu wczytywania ustawia odpowiednią flagę strumienia wejściowego
+ *
+ *ARGUMENTY: strm - strumien z którego zostanie wczytany Symbol
+ *           wynik- zmienna w której zostanie zapisany wczytany wpisany symbol
+*
+ */
+
+istream& operator>> (istream & strmWe, Symbol &wynik);
+
+/*!
+ *\brief Przeciążenie operatora wypisywania na wybrany strumień
+ *PRE: BRAK
+ *POST: funkcja zwraca referencję do strumienia wczytaną jako jeden z parametrów
+ *
+ *ARGUMENTY: strm - strumien do którego zostanie wpisany Symbol
+ *           a    - Symbol do wypisania
+ *
+ */
+ ostream& operator<<(ostream& strm, ZnakDzial a);
+
+/*!
+ *\brief Przeciążenie operatora wczytywania ze standardowego wejścia
+ *PRE: BRAK
+ *POST: funkcja zwraca referencję do strumienia wczytaną jako jeden z parametrów
+ *      w przypadku błędu wczytywania ustawia odpowiednią flagę strumienia wejściowego
+ *
+ *ARGUMENTY: strm - strumien z którego zostanie wczytany Symbol
+ *           wynik- zmienna w której zostanie zapisany wczytany wpisany symbol
+*
+ */
+
+istream& operator>> (istream & strmWe, ZnakDzial &wynik);
+
+#endif
