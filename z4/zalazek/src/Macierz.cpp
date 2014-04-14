@@ -1,19 +1,19 @@
 #include "../inc/Macierz.hh"
 
-template<class TYP>
-Macierz<TYP>::Macierz()
+template <class TYP, int ROZMIAR>
+Macierz<TYP, ROZMIAR>::Macierz()
 {
 
 }
 
-template<class TYP>
-Macierz<TYP>::~Macierz()
+template <class TYP, int ROZMIAR>
+Macierz<TYP, ROZMIAR>::~Macierz()
 {
 
 }
 
-template<class TYP>
-std::istream& operator >> (std::istream &Strm, Macierz<TYP> &Mac)
+template <class TYP, int ROZMIAR>
+std::istream& operator >> (std::istream &Strm, Macierz<TYP, ROZMIAR> &Mac)
 {
     for(unsigned int i=0;i<ROZMIAR;i++)
     {
@@ -22,8 +22,8 @@ std::istream& operator >> (std::istream &Strm, Macierz<TYP> &Mac)
     return Strm;
 }
 
-template<class TYP>
-std::ostream& operator << (std::ostream &Strm, const Macierz<TYP> &Mac)
+template <class TYP, int ROZMIAR>
+std::ostream& operator << (std::ostream &Strm, const Macierz<TYP, ROZMIAR> &Mac)
 {
     for(unsigned int i=0;i<ROZMIAR;i++)
     {
@@ -31,3 +31,4 @@ std::ostream& operator << (std::ostream &Strm, const Macierz<TYP> &Mac)
     }
     return Strm;
 }
+

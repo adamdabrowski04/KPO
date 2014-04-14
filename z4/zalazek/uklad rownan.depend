@@ -28,3 +28,47 @@
 1396870542 source:/home/adam/Desktop/zad/z4/zalazek/src/Wektor.cpp
 	"../inc/Wektor.hh"
 
+1397477808 source:/home/adam/Desktop/KPO/z4/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1397477808 /home/adam/Desktop/KPO/z4/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/rozmiar.h"
+
+1397470900 source:/home/adam/Desktop/KPO/z4/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+
+1397470900 /home/adam/Desktop/KPO/z4/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1397308320 /home/adam/Desktop/KPO/z4/zalazek/inc/rozmiar.h
+
+1397479111 /home/adam/Desktop/KPO/z4/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+	<vector>
+
+1397477808 source:/home/adam/Desktop/KPO/z4/zalazek/src/main.cpp
+	<iostream>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+
+1397479142 /home/adam/Desktop/KPO/z4/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1397470900 /home/adam/Desktop/KPO/z4/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+
+1397479171 /home/adam/Desktop/KPO/z4/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1397479142 source:/home/adam/Desktop/KPO/z4/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+

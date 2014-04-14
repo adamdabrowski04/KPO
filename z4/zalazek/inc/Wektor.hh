@@ -3,13 +3,14 @@
 
 #include "../inc/rozmiar.h"
 #include <iostream>
+#include<vector>
 
 using namespace std;
 /*
  *  Tutaj trzeba opisac klase. Jakie pojecie modeluje ta klasa
  *  i jakie ma glowne cechy.
  */
-template<class TYP>
+template <class TYP, int ROZMIAR>
 class Wektor {
   /*
    *  Tutaj trzeba wstawic definicje odpowiednich pol i metod prywatnych
@@ -32,7 +33,8 @@ class Wektor {
  * BRAK
  */
   Wektor();
-
+    Wektor(Wektor & Wzor);
+    Wektor& operator=(Wektor&);
 /*!
  * \brief Destruktor klasy Wektor
  *
@@ -67,7 +69,7 @@ class Wektor {
  * Zwraca  referencję do elementu tablicy o danym indeksie
  *
  */
-inline TYP& operator[](unsigned int i)const;
+inline TYP& operator[](unsigned int i);
 
 /*!
  * \brief Dodaje dwa wektory
@@ -168,7 +170,8 @@ Wektor operator/(TYP)const;
  * \brief Wskaźnik pokazujący na tablicę danych
  *
  */
-TYP *pTab;
+ TYP *pTab;
+
   protected:
 
   private:
@@ -194,8 +197,8 @@ TYP *pTab;
  * Referencja do strumienia, z którego wczytujemy dane
  *
  */
-template<class TYP>
-std::istream& operator >> (std::istream &Strm, Wektor<TYP> &Wek);
+template <class TYP, int ROZMIAR>
+std::istream& operator >> (std::istream &Strm, Wektor<TYP, ROZMIAR> &Wek);
 
 
  /*!
@@ -216,7 +219,7 @@ std::istream& operator >> (std::istream &Strm, Wektor<TYP> &Wek);
  * Referencja do strumienia, do którego wypisujemy dane
  *
  */
-template<class TYP>
-std::ostream& operator << (std::ostream &Strm, const Wektor<TYP> &Wek);
+template <class TYP, int ROZMIAR>
+std::ostream& operator << (std::ostream &Strm, const Wektor<TYP, ROZMIAR> &Wek);
 
 #endif

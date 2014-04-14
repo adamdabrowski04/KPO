@@ -10,15 +10,17 @@
  *  Tutaj trzeba opisac klase. Jakie pojecie modeluje ta klasa
  *  i jakie ma glowne cechy.
  */
-template<class TYP>
+template <class TYP, int ROZMIAR>
 class Macierz{
 
   public:
-  Wektor<Wektor<TYP> > A;
+  Wektor<Wektor<TYP, ROZMIAR>, ROZMIAR > A;
+
   Macierz();
    ~Macierz();
   protected:
   private:
+
 
 
 };
@@ -42,8 +44,8 @@ class Macierz{
  * Referencja do strumienia, z którego wczytujemy dane
  *
  */
-template<class TYP>
-std::istream& operator >> (std::istream &Strm, Macierz<TYP> &Mac);
+template <class TYP, int ROZMIAR>
+std::istream& operator >> (std::istream &Strm, Macierz<TYP, ROZMIAR> &Mac);
 
 
  /*!
@@ -64,8 +66,8 @@ std::istream& operator >> (std::istream &Strm, Macierz<TYP> &Mac);
  * Referencja do strumienia, do którego wypisujemy dane
  *
  */
-template<class TYP>
-std::ostream& operator << (std::ostream &Strm, const Macierz<TYP> &Mac);
+template <class TYP, int ROZMIAR>
+std::ostream& operator << (std::ostream &Strm, const Macierz<TYP, ROZMIAR> &Mac);
 
 
 #endif
