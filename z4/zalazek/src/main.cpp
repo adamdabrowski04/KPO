@@ -3,7 +3,7 @@
 #include "../src/Macierz.cpp"
 #include "../src/UkladRownanLiniowych.cpp"
 #include "../inc/rozmiar.h"
-
+#include "../inc/zespolone.hh"
 using namespace std;
 
 /*
@@ -16,17 +16,19 @@ using namespace std;
 
 int main()
 {
- // UkladRownanLiniowych   UklRown;   // To tylko przykladowe definicje zmiennej
-   Wektor<double, ROZMIAR_DEFINED>  Wek_Rozw;
-    UkladRownanLiniowych<double, ROZMIAR_DEFINED> A;
-    cin>>A.Mac_A;
-   // cout<<"maicierz"<<A.Mac_A;
-    cin>>A.Wek_b;
-    A.Rozklad_LUP();
-    cout<<"pies"<<endl;
-    //cout<<"maicierz"<<A.LU;
-    A.Rozwiaz_LUP();
-    cout<<A.Wek_X;
 
-cout<<"koniec programu"<<endl;
+    Wektor<Zespolona, ROZMIAR_DEFINED>  Wek_Rozw;
+    UkladRownanLiniowych<Zespolona, ROZMIAR_DEFINED> A;
+    Zespolona blad;
+    cin>>A;
+    cout<<"MaicierzA^T\n"<<A.Mac_A;
+    cout<<"Wektor wyrazow wolnych b:\n"<<A.Wek_b<<endl;
+    A.Rozklad_LUP();
+    cout<<"MaicierzLU\n"<<A.LU;
+    Wek_Rozw=A.Rozwiaz_LUP();
+    cout<<"Rozwiazanie x= ( x1 x2 x3 x4 )"<<endl;
+    cout<<"( "<<A.Wek_X<<" )"<<endl;
+    blad= A.ObliczBlad(Wek_Rozw);
+    cout<<"Dlugosc wektora Bledu:  "<<blad<<endl;
+cout<<"\nkoniec programu"<<endl;
 }

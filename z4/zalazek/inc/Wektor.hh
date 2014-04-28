@@ -34,7 +34,7 @@ class Wektor {
  */
   Wektor();
     Wektor(Wektor & Wzor);
-    Wektor& operator=(Wektor&);
+    Wektor& operator=(const Wektor<TYP, ROZMIAR>&);
 /*!
  * \brief Destruktor klasy Wektor
  *

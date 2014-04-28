@@ -17,19 +17,21 @@ Wektor<TYP, ROZMIAR>::~Wektor()
 template <class TYP, int ROZMIAR>
 Wektor<TYP, ROZMIAR>::Wektor(Wektor & Wzor)
 {
+    pTab = new TYP[ROZMIAR];
     for(int i=0;i<ROZMIAR;i++)
     {
         pTab[i]=Wzor.pTab[i];
     }
 }
 template <class TYP, int ROZMIAR>
-Wektor<TYP, ROZMIAR>& Wektor<TYP, ROZMIAR>::operator=(Wektor<TYP, ROZMIAR> &Wzor)
+Wektor<TYP, ROZMIAR>& Wektor<TYP, ROZMIAR>::operator=( const Wektor<TYP, ROZMIAR> &Wzor)
 {
+    pTab= new TYP[ROZMIAR];
     for(int i=0;i<ROZMIAR;i++)
     {
-        pTab[i]=Wzor.pTab[i];
+        this->pTab[i]=Wzor.pTab[i];
     }
-    return Wzor;
+    return *this;
 }
 
 template <class TYP, int ROZMIAR>
@@ -86,7 +88,7 @@ TYP Wektor<TYP, ROZMIAR>::operator*(Wektor<TYP, ROZMIAR> Drugi)const
     TYP Wynik=0;
     for(unsigned int i=0;i<ROZMIAR;i++)
     {
-        Wynik+=pTab[i]*Drugi[i];
+        Wynik=pTab[i]*Drugi[i]+Wynik;
     }
     return Wynik;
 }

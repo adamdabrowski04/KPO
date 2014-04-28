@@ -15,9 +15,9 @@ class Macierz{
 
   public:
   Wektor<Wektor<TYP, ROZMIAR>, ROZMIAR > A;
-
   Macierz();
    ~Macierz();
+  Wektor<TYP, ROZMIAR> operator*(Wektor<TYP, ROZMIAR> );
   protected:
   private:
 
@@ -67,7 +67,7 @@ std::istream& operator >> (std::istream &Strm, Macierz<TYP, ROZMIAR> &Mac);
  *
  */
 template <class TYP, int ROZMIAR>
-std::ostream& operator << (std::ostream &Strm, const Macierz<TYP, ROZMIAR> &Mac);
+std::ostream& operator << (std::ostream &Strm, Macierz<TYP, ROZMIAR> &Mac);
 
 
 #endif

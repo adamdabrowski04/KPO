@@ -15,7 +15,7 @@ Wektor<TYP, ROZMIAR> UkladRownanLiniowych<TYP, ROZMIAR>::Rozwiaz_LUP(void)
     {
     TYP SumaTmp;
         for(int j=0;j<i-1;j++)
-            SumaTmp=Mac_A.A[i][j]*Wek_Y[j];
+            SumaTmp=LU.A[i][j]*Wek_Y[j];
 
         Wek_Y[i]=Wek_b[PI[i]]-SumaTmp;
     }
@@ -23,8 +23,8 @@ Wektor<TYP, ROZMIAR> UkladRownanLiniowych<TYP, ROZMIAR>::Rozwiaz_LUP(void)
     {
         TYP SumaTmp;
         for(int j=i+1;j<ROZMIAR;j++)
-            SumaTmp=Mac_A.A[i][j]*Wek_X[j];
-        Wek_X[i]=(Wek_Y[i]-SumaTmp)/Mac_A.A[i][i];
+            SumaTmp=LU.A[i][j]*Wek_X[j];
+        Wek_X[i]=(Wek_Y[i]-SumaTmp)/LU.A[i][i];
     }
     return Wek_X;
 }
@@ -33,28 +33,25 @@ Wektor<TYP, ROZMIAR> UkladRownanLiniowych<TYP, ROZMIAR>::Rozwiaz_LUP(void)
 template <class TYP, int ROZMIAR>
 Macierz<TYP, ROZMIAR> UkladRownanLiniowych<TYP, ROZMIAR>::Rozklad_LUP()
 {
-    //Mac_A;
+    LU=Mac_A;
     int kPrim;
     for(int i =0; i<ROZMIAR;i++)
     {
-    cout<<"aa"<<endl;
         PI[i]=i;
     }
     for(int k=0;k<ROZMIAR;k++)
     {
-    cout<<"bb"<<endl;
-        int p=0;
+        TYP p(0);
         for(int i=k;i<ROZMIAR;i++)
         {
-            if( ( (Mac_A.A[i][k]<0)?-Mac_A.A[i][k]:Mac_A.A[i][k]) > p)
+            if( ( (LU.A[i][k]<0)?-LU.A[i][k]:LU.A[i][k]) > p)
             {
-                p=( (Mac_A.A[i][k]<0)?-Mac_A.A[i][k]:Mac_A.A[i][k]);
+                p=( (LU.A[i][k]<0)?-LU.A[i][k]:LU.A[i][k]);
                 kPrim=i;
             }
         }
         if(p==0)
             cerr<<"Blad 1"<<endl;
-        cout<<"cc"<<kPrim<<endl;
         int tmpPI;
         tmpPI=PI[k];
         PI[k]=PI[kPrim];
@@ -62,20 +59,41 @@ Macierz<TYP, ROZMIAR> UkladRownanLiniowych<TYP, ROZMIAR>::Rozklad_LUP()
         for(int i=0;i<ROZMIAR;i++)
         {
             TYP tmp;
-            tmp=Mac_A.A[k][i];
-            Mac_A.A[k][i]=Mac_A.A[kPrim][i];
-            Mac_A.A[kPrim][i]=tmp;
+            tmp=LU.A[k][i];
+            LU.A[k][i]=LU.A[kPrim][i];
+            LU.A[kPrim][i]=tmp;
         }
         for(int i=k+1;i<ROZMIAR;i++)
         {
-            Mac_A.A[i][k]=Mac_A.A[i][k] / Mac_A.A[k][k];
+            LU.A[i][k]=LU.A[i][k] / LU.A[k][k];
             for(int j=k+1;j<ROZMIAR;j++)
             {
-                Mac_A.A[i][j]=Mac_A.A[i][j] - Mac_A.A[i][k] * Mac_A.A[k][j];
+                LU.A[i][j]=LU.A[i][j] - LU.A[i][k] * LU.A[k][j];
             }
         }
     }
-     cout<<"dd"<<endl;
-    return Mac_A;
+    return LU;
 
 }
+
+template <class TYP, int ROZMIAR>
+TYP UkladRownanLiniowych<TYP, ROZMIAR>::ObliczBlad(Wektor<TYP, ROZMIAR> WekRozw)
+{
+    TYP blad;
+    Wektor<TYP, ROZMIAR> WekBlad;
+    WekBlad= Mac_A*WekRozw;
+    WekBlad= WekBlad-Wek_b;
+    blad=WekBlad*WekBlad;
+    return blad;
+}
+
+
+ template <class TYP, int ROZMIAR>
+std::istream& operator >> (std::istream &Strm, UkladRownanLiniowych<TYP, ROZMIAR> &UklRown)
+{
+    Strm>>UklRown.Mac_A;
+    Strm>>UklRown.Wek_b;
+    return Strm;
+}
+
+
