@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -36,10 +38,13 @@
 		<Unit filename="inc/UkladRownanLiniowych.hh" />
 		<Unit filename="inc/Wektor.hh" />
 		<Unit filename="inc/rozmiar.h" />
+		<Unit filename="inc/zespolone.hh" />
+		<Unit filename="include/LZesp.h" />
 		<Unit filename="src/Macierz.cpp" />
 		<Unit filename="src/UkladRownanLiniowych.cpp" />
 		<Unit filename="src/Wektor.cpp" />
 		<Unit filename="src/main.cpp" />
+		<Unit filename="src/zespolone.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
