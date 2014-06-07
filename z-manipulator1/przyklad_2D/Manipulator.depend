@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1401090847 source:/home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/src/lacze_do_gnuplota.cpp
+	<cstdio>
+	<cstring>
+	<cmath>
+	<iostream>
+	<sys/stat.h>
+	<unistd.h>
+	<cstdlib>
+	<fcntl.h>
+	<sstream>
+	"../inc/lacze_do_gnuplota.hh"
+
+1400429469 /home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/inc/lacze_do_gnuplota.hh
+	<string>
+	<list>
+	<vector>
+
+1401099721 source:/home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/src/Manipulator.cpp
+	"../include/Manipulator.h"
+	"../include/ogniwo.h"
+	<string>
+	<fstream>
+	<iomanip>
+	<iostream>
+	<cmath>
+
+1401102317 /home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/include/Manipulator.h
+	<vector>
+	<string>
+	"../include/ogniwo.h"
+
+1401100822 /home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/include/ogniwo.h
+	<vector>
+
+1401094151 source:/home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/src/ogniwo.cpp
+	"../include/ogniwo.h"
+	<cmath>
+
+1402003040 source:/home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/src/start.cpp
+	<iostream>
+	<iomanip>
+	"../inc/lacze_do_gnuplota.hh"
+	"../include/Manipulator.h"
+	<string>
+	<unistd.h>
+

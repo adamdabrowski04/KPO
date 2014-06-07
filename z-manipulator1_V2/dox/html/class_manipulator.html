@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>My Project: Dokumentacja klasy Manipulator</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="pages.html"><span>Dodatkowe&#160;strony</span></a></li>
+      <li><a href="namespaces.html"><span>Przestrzenie&#160;nazw</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klasy</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;klas</span></a></li>
+      <li><a href="classes.html"><span>Indeks&#160;klas</span></a></li>
+      <li><a href="functions.html"><span>Składowe&#160;klas</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_manipulator.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Przestrzenie nazw</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Wyliczenia</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Wartości wyliczeń</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_manipulator-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Manipulator</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_manipulator_8h_source.html">Manipulator.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:abbd62833e5ee98b5adba6a1ccb8ab4e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulator.html#abbd62833e5ee98b5adba6a1ccb8ab4e9">WczytajDlugosciOgniw</a> (string nazwa_pliku)</td></tr>
+<tr class="separator:abbd62833e5ee98b5adba6a1ccb8ab4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd74c1a8bd5c0f28feffe2d194573df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulator.html#afdd74c1a8bd5c0f28feffe2d194573df">WczytajKaty</a> (string)</td></tr>
+<tr class="memdesc:afdd74c1a8bd5c0f28feffe2d194573df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytuje dlugosci poszczegolnych ogniw manipulatora.  <a href="#afdd74c1a8bd5c0f28feffe2d194573df">Więcej...</a><br/></td></tr>
+<tr class="separator:afdd74c1a8bd5c0f28feffe2d194573df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b1a18d6e465b21f234bb70d405313b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulator.html#a55b1a18d6e465b21f234bb70d405313b">ZapiszWierzcholkiDoPliku</a> (string) const </td></tr>
+<tr class="memdesc:a55b1a18d6e465b21f234bb70d405313b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytuje katy kolejnych ogniw.  <a href="#a55b1a18d6e465b21f234bb70d405313b">Więcej...</a><br/></td></tr>
+<tr class="separator:a55b1a18d6e465b21f234bb70d405313b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b400ddf6629c923823c1bfc58cdd2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulator.html#ad9b400ddf6629c923823c1bfc58cdd2f">WypiszWierzcholkiNaEkran</a> (void) const </td></tr>
+<tr class="memdesc:ad9b400ddf6629c923823c1bfc58cdd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapisuje wspolrzedne wierzcholkow w pliku o podanej nazwie.  <a href="#ad9b400ddf6629c923823c1bfc58cdd2f">Więcej...</a><br/></td></tr>
+<tr class="separator:ad9b400ddf6629c923823c1bfc58cdd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9125fd6f0b79dcd893b3641c847b011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulator.html#ae9125fd6f0b79dcd893b3641c847b011">UstawPozycjeStartowa</a> (void)</td></tr>
+<tr class="memdesc:ae9125fd6f0b79dcd893b3641c847b011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wypisuje nr wiercholka kot nachylenia i jego wspolrzedne.  <a href="#ae9125fd6f0b79dcd893b3641c847b011">Więcej...</a><br/></td></tr>
+<tr class="separator:ae9125fd6f0b79dcd893b3641c847b011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5736095a86d7fa6dfe2586b3ff6db065"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulator.html#a5736095a86d7fa6dfe2586b3ff6db065">WypiszKonfiguracje</a> ()</td></tr>
+<tr class="memdesc:a5736095a86d7fa6dfe2586b3ff6db065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wypisuje dlugosci kolejnych ogniw manioulatora.  <a href="#a5736095a86d7fa6dfe2586b3ff6db065">Więcej...</a><br/></td></tr>
+<tr class="separator:a5736095a86d7fa6dfe2586b3ff6db065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c301d01641037e7548a1b87e6103f65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulator.html#a4c301d01641037e7548a1b87e6103f65">Manipulator</a> ()</td></tr>
+<tr class="separator:a4c301d01641037e7548a1b87e6103f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26e1b16415d3ee9d5cb7bdd42e8a708"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_manipulator.html#ab26e1b16415d3ee9d5cb7bdd42e8a708">~Manipulator</a> ()</td></tr>
+<tr class="separator:ab26e1b16415d3ee9d5cb7bdd42e8a708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a class="anchor" id="a4c301d01641037e7548a1b87e6103f65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Manipulator::Manipulator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab26e1b16415d3ee9d5cb7bdd42e8a708"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Manipulator::~Manipulator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a class="anchor" id="ae9125fd6f0b79dcd893b3641c847b011"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Manipulator::UstawPozycjeStartowa </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wypisuje nr wiercholka kot nachylenia i jego wspolrzedne. </p>
+<dl class="section pre"><dt>Warunek wstępny</dt><dd>BRAK </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_manipulator_ae9125fd6f0b79dcd893b3641c847b011_icgraph.png" border="0" usemap="#class_manipulator_ae9125fd6f0b79dcd893b3641c847b011_icgraph" alt=""/></div>
+<map name="class_manipulator_ae9125fd6f0b79dcd893b3641c847b011_icgraph" id="class_manipulator_ae9125fd6f0b79dcd893b3641c847b011_icgraph">
+<area shape="rect" id="node2" href="start_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="237,12,288,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abbd62833e5ee98b5adba6a1ccb8ab4e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Manipulator::WczytajDlugosciOgniw </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nazwa_pliku</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_manipulator_abbd62833e5ee98b5adba6a1ccb8ab4e9_icgraph.png" border="0" usemap="#class_manipulator_abbd62833e5ee98b5adba6a1ccb8ab4e9_icgraph" alt=""/></div>
+<map name="class_manipulator_abbd62833e5ee98b5adba6a1ccb8ab4e9_icgraph" id="class_manipulator_abbd62833e5ee98b5adba6a1ccb8ab4e9_icgraph">
+<area shape="rect" id="node2" href="start_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="251,12,301,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afdd74c1a8bd5c0f28feffe2d194573df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Manipulator::WczytajKaty </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nazwa_pliku</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wczytuje dlugosci poszczegolnych ogniw manipulatora. </p>
+<dl class="section pre"><dt>Warunek wstępny</dt><dd>BRAK</dd></dl>
+<dl class="section post"><dt>Warunek końcowy</dt><dd>Wczytuja dlugosci poszczegolnych ogniw</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nazwa_pliku</td><td>- nnazwa pliku z któregczyjemyy dane;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true-wczystko się powiedzie false - nie uda sie wczytac </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_manipulator_afdd74c1a8bd5c0f28feffe2d194573df_icgraph.png" border="0" usemap="#class_manipulator_afdd74c1a8bd5c0f28feffe2d194573df_icgraph" alt=""/></div>
+<map name="class_manipulator_afdd74c1a8bd5c0f28feffe2d194573df_icgraph" id="class_manipulator_afdd74c1a8bd5c0f28feffe2d194573df_icgraph">
+<area shape="rect" id="node2" href="start_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="227,5,277,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5736095a86d7fa6dfe2586b3ff6db065"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Manipulator::WypiszKonfiguracje </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wypisuje dlugosci kolejnych ogniw manioulatora. </p>
+<dl class="section pre"><dt>Warunek wstępny</dt><dd>BRAK </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_manipulator_a5736095a86d7fa6dfe2586b3ff6db065_icgraph.png" border="0" usemap="#class_manipulator_a5736095a86d7fa6dfe2586b3ff6db065_icgraph" alt=""/></div>
+<map name="class_manipulator_a5736095a86d7fa6dfe2586b3ff6db065_icgraph" id="class_manipulator_a5736095a86d7fa6dfe2586b3ff6db065_icgraph">
+<area shape="rect" id="node2" href="start_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="267,5,317,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9b400ddf6629c923823c1bfc58cdd2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Manipulator::WypiszWierzcholkiNaEkran </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zapisuje wspolrzedne wierzcholkow w pliku o podanej nazwie. </p>
+<dl class="section pre"><dt>Warunek wstępny</dt><dd>BRAK</dd></dl>
+<dl class="section post"><dt>Warunek końcowy</dt><dd>dostajemy plik z zapisanymi wspolrzednymi x i y w 2 kolumnach</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nazwa_pliku</td><td>- nazwa pliku do którego wypisujemy dane;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true - wszystko się powiedzie false - nie uda sie wczytac </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_manipulator_ad9b400ddf6629c923823c1bfc58cdd2f_icgraph.png" border="0" usemap="#class_manipulator_ad9b400ddf6629c923823c1bfc58cdd2f_icgraph" alt=""/></div>
+<map name="class_manipulator_ad9b400ddf6629c923823c1bfc58cdd2f_icgraph" id="class_manipulator_ad9b400ddf6629c923823c1bfc58cdd2f_icgraph">
+<area shape="rect" id="node2" href="start_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="264,12,315,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a55b1a18d6e465b21f234bb70d405313b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Manipulator::ZapiszWierzcholkiDoPliku </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nazwa_pliku</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wczytuje katy kolejnych ogniw. </p>
+<dl class="section pre"><dt>Warunek wstępny</dt><dd>W pliku nie moze byc bledow ///TODO (1#Adam#) naprawic to</dd></dl>
+<dl class="section post"><dt>Warunek końcowy</dt><dd>Zapisuje w odpowiedniej zmiennej poszczegolne katy</dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nazwa_pliku</td><td>- nazwa pliku z którego wczytujemy dane;</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true - wszystko się powiedzie false - nie uda sie wczytac </dd></dl>
+
+<p><div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_manipulator_a55b1a18d6e465b21f234bb70d405313b_icgraph.png" border="0" usemap="#class_manipulator_a55b1a18d6e465b21f234bb70d405313b_icgraph" alt=""/></div>
+<map name="class_manipulator_a55b1a18d6e465b21f234bb70d405313b_icgraph" id="class_manipulator_a55b1a18d6e465b21f234bb70d405313b_icgraph">
+<area shape="rect" id="node2" href="start_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="259,12,309,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>przyklad_2D/include/<a class="el" href="_manipulator_8h_source.html">Manipulator.h</a></li>
+<li>przyklad_2D/src/<a class="el" href="_manipulator_8cpp.html">Manipulator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_manipulator.html">Manipulator</a></li>
+    <li class="footer">Wygenerowano Pn, 26 maj 2014 13:04:10 dla My Project programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>
