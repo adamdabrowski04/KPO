@@ -1,0 +1,4 @@
+<map id="Scena::WczytajScene" name="Scena::WczytajScene">
+<area shape="rect" id="node2" href="$class_manipulator.html#afdd74c1a8bd5c0f28feffe2d194573df" title="Wczytuje dlugosci poszczegolnych ogniw manipulatora. " alt="" coords="222,5,394,32"/>
+<area shape="rect" id="node3" href="$class_manipulator.html#a55b1a18d6e465b21f234bb70d405313b" title="Wczytuje katy kolejnych ogniw. " alt="" coords="206,57,410,98"/>
+</map>
