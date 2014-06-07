@@ -1,6 +1,10 @@
 /*!
 *
 *\page strina-diagram-klas Diagram klas
+<<<<<<< HEAD
 *\image html Diagram1.jpeg "Diagram Klas"
+=======
+*\image html Diagram1.jpeg "Diagram przypadków uzycia"
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 *\image html Diagram2.jpeg "Diagram Czynności"
 */

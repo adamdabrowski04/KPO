@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 <map id="UkladRownanLiniowych&lt; TYP, ROZMIAR &gt;" name="UkladRownanLiniowych&lt; TYP, ROZMIAR &gt;">
 <area shape="rect" id="node2" href="$class_wektor.html" title="Wektor\&lt; int, ROZMIAR \&gt;" alt="" coords="5,5,176,35"/>
+=======
+<map id="UkladRownanLiniowych&lt; TYP &gt;" name="UkladRownanLiniowych&lt; TYP &gt;">
+<area shape="rect" id="node2" href="$class_wektor.html" title="Wektor\&lt; int \&gt;" alt="" coords="35,5,137,32"/>
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 </map>

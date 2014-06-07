@@ -18,14 +18,26 @@
 
 
 
+<<<<<<< HEAD
 template <class TYP, int ROZMIAR>
+=======
+template <class TYP>
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 class UkladRownanLiniowych {
 
 
   public:
+<<<<<<< HEAD
   Wektor<int, ROZMIAR> PI;
   Macierz<TYP, ROZMIAR> Mac_A, LU;
   Wektor<TYP, ROZMIAR>  Wek_b, Wek_X;
+=======
+
+  Wektor<int> PI;
+  Macierz<TYP> Mac_A, LU;
+  Wektor<TYP>  Wek_b, Wek_X;
+  UkladRownanLiniowych();
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 /*!
  * \brief Wylicza rozkład macierzy LUP
  *
@@ -40,7 +52,11 @@ class UkladRownanLiniowych {
  * \return Wyliczona Macierz LU
  *
  */
+<<<<<<< HEAD
   Macierz<TYP, ROZMIAR> Rozklad_LUP();
+=======
+  Macierz<TYP> Rozklad_LUP();
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 /*!
  * \brief Oblicza uklad rownan w oparci ma macierz LUP
  *
@@ -55,7 +71,11 @@ class UkladRownanLiniowych {
  * Zwracana wartość:
  * \return Wektor wynikowy *
  */
+<<<<<<< HEAD
   Wektor<TYP, ROZMIAR> Rozwiaz_LUP(void);
+=======
+  Wektor<TYP> Rozwiaz_LUP(void);
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 /*!
  * \brief Oblicza blad popelniony dla danego rozwiazania ukladu rownan
  *
@@ -68,7 +88,11 @@ class UkladRownanLiniowych {
  * \return Wartość typu TYP -obliczony blad
  *
  */
+<<<<<<< HEAD
   TYP ObliczBlad(Wektor<TYP, ROZMIAR> WekRozw);
+=======
+  TYP ObliczBlad(Wektor<TYP> WekRozw);
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
   protected:
 
   private:
@@ -91,8 +115,13 @@ class UkladRownanLiniowych {
  *
  */
 
+<<<<<<< HEAD
  template <class TYP, int ROZMIAR>
 std::istream& operator >> (std::istream &Strm, UkladRownanLiniowych<TYP, ROZMIAR> &UklRown);
+=======
+ template <class TYP>
+std::istream& operator >> (std::istream &Strm, UkladRownanLiniowych<TYP> &UklRown);
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 
 /*!
  * \brief Wypisuje do danego strumienia Macierz danych i wektor wyrazow wolnych
@@ -112,9 +141,15 @@ std::istream& operator >> (std::istream &Strm, UkladRownanLiniowych<TYP, ROZMIAR
  * Referencja do strumienia, do którego wypisujemy dane
  *
  */
+<<<<<<< HEAD
  template <class TYP, int ROZMIAR>
 std::ostream& operator << ( std::ostream                  &Strm,
                             const UkladRownanLiniowych<TYP, ROZMIAR>    &UklRown
+=======
+ template <class TYP>
+std::ostream& operator << ( std::ostream                  &Strm,
+                            const UkladRownanLiniowych<TYP>    &UklRown
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
                           );
 
 

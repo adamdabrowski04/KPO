@@ -1,4 +1,5 @@
 #include "../inc/UkladRownanLiniowych.hh"
+<<<<<<< HEAD
 
 
 /*
@@ -11,6 +12,20 @@ template <class TYP, int ROZMIAR>
 Wektor<TYP, ROZMIAR> UkladRownanLiniowych<TYP, ROZMIAR>::Rozwiaz_LUP(void)
 {
     Wektor<TYP, ROZMIAR> Wek_Y;
+=======
+#include "../inc/rozmiar.h"
+template <class TYP>
+UkladRownanLiniowych<TYP>::UkladRownanLiniowych()
+{
+
+
+}
+
+template <class TYP>
+Wektor<TYP> UkladRownanLiniowych<TYP>::Rozwiaz_LUP(void)
+{
+    Wektor<TYP> Wek_Y;
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
     for(int i=0;i<ROZMIAR;i++)
     {
     TYP SumaTmp;
@@ -26,12 +41,24 @@ Wektor<TYP, ROZMIAR> UkladRownanLiniowych<TYP, ROZMIAR>::Rozwiaz_LUP(void)
             SumaTmp=LU.A[i][j]*Wek_X[j];
         Wek_X[i]=(Wek_Y[i]-SumaTmp)/LU.A[i][i];
     }
+<<<<<<< HEAD
     return Wek_X;
 }
 
 
 template <class TYP, int ROZMIAR>
 Macierz<TYP, ROZMIAR> UkladRownanLiniowych<TYP, ROZMIAR>::Rozklad_LUP()
+=======
+        //cout<<"Ilosc wywolan korozkladnstruktora kopjujacego "<<Mac_A.A.iloscWywolan<<endl;
+
+    return Wek_X;
+
+}
+
+
+template <class TYP>
+Macierz<TYP> UkladRownanLiniowych<TYP>::Rozklad_LUP()
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 {
     LU=Mac_A.Transponuj();
     int kPrim;
@@ -76,6 +103,7 @@ Macierz<TYP, ROZMIAR> UkladRownanLiniowych<TYP, ROZMIAR>::Rozklad_LUP()
 
 }
 
+<<<<<<< HEAD
 template <class TYP, int ROZMIAR>
 TYP UkladRownanLiniowych<TYP, ROZMIAR>::ObliczBlad(Wektor<TYP, ROZMIAR> WekRozw)
 {
@@ -90,6 +118,25 @@ TYP UkladRownanLiniowych<TYP, ROZMIAR>::ObliczBlad(Wektor<TYP, ROZMIAR> WekRozw)
 
  template <class TYP, int ROZMIAR>
 std::istream& operator >> (std::istream &Strm, UkladRownanLiniowych<TYP, ROZMIAR> &UklRown)
+=======
+template <class TYP>
+TYP UkladRownanLiniowych<TYP>::ObliczBlad(Wektor<TYP> WekRozw)
+{
+    TYP blad;
+    Wektor<TYP> WekBlad;
+    WekBlad= Mac_A.Transponuj()*WekRozw;
+    WekBlad= WekBlad-Wek_b;
+    blad=WekBlad*WekBlad;
+       //cout<<"Ilosc wywolan konstruktora kopjujacego blad "<<Mac_A.A.iloscWywolan<<endl;
+
+    return blad;
+
+}
+
+
+ template <class TYP>
+std::istream& operator >> (std::istream &Strm, UkladRownanLiniowych<TYP> &UklRown)
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 {
     Strm>>UklRown.Mac_A;
     Strm>>UklRown.Wek_b;

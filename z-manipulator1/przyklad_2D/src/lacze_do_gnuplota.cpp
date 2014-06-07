@@ -12,7 +12,11 @@
 #pragma implementation
 #endif
 
+<<<<<<< HEAD
 #include "../inc/lacze_do_gnuplota.hh"
+=======
+#include "lacze_do_gnuplota.hh"
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 
 using namespace std;
 
@@ -32,7 +36,11 @@ namespace PzG {
  }
 
 
+<<<<<<< HEAD
   LaczeDoGNUPlota::~LaczeDoGNUPlota()
+=======
+  LaczeDoGNUPlota::~LaczeDoGNUPlota() 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
   {}
 
 
@@ -40,7 +48,11 @@ namespace PzG {
  {
   int Ilosc = strlen(Komunikat);
   int IloscPrzeslanych;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
   while (((IloscPrzeslanych = write(_Wejscie_GNUPlota,Komunikat,Ilosc)) != -1)
           && Ilosc > 0) {
     Komunikat += IloscPrzeslanych;
@@ -56,13 +68,22 @@ namespace PzG {
 
 
 
+<<<<<<< HEAD
  LaczeDoGNUPlota::LaczeDoGNUPlota()
  {
+=======
+ LaczeDoGNUPlota::LaczeDoGNUPlota() 
+ { 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
    _PokazOs_OX = _PokazOs_OY = true;
 
    _TrybRys = TR_2D;
    WyswietlajKomunikatyBledow();
+<<<<<<< HEAD
    _Wyjscie_GNUPlota = _Wejscie_GNUPlota = -1;
+=======
+   _Wyjscie_GNUPlota = _Wejscie_GNUPlota = -1; 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
    UstawZakresX(-350,350);
    UstawZakresY(-350,350);
    UstawZakresZ(-200,200);
@@ -94,7 +115,11 @@ namespace PzG {
  // POST:
  //  Zwraca wartosc:
  //     true - jezeli istnieje plik o nazwie zawartej w zmiennej NazwaPliku.
+<<<<<<< HEAD
  //             Zostaje on ponadto dodany do listy plikow z danymi
+=======
+ //             Zostaje on ponadto dodany do listy plikow z danymi 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
  //             dla gnuplota.
  //    fasle - Jezeli nie istnieje plik o nazwie zawartej w zmiennej
  //            NazwaPliku. Zadne dodatkowe dzialanie nie jest realizowane.
@@ -120,7 +145,11 @@ namespace PzG {
 
  //-------------------------------------------------------------------------
  // Informuje, czy po³±czenie z programem gnuplot zosta³o zainicjowane.
+<<<<<<< HEAD
  //
+=======
+ // 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
  bool LaczeDoGNUPlota::CzyPolaczenieJestZainicjowane() const
  {
   return _Wejscie_GNUPlota > -1 && _Wyjscie_GNUPlota > -1;
@@ -154,7 +183,11 @@ namespace PzG {
  *  poprzez przejêcie jego wej¶cia i wyj¶cia standardowego.
  *
  *  \retval true - gdy po³±czenie z programem \e gnuplot zosta³o poprawnie
+<<<<<<< HEAD
  *               zainicjalizowane lub gdy ju¿ wcze¶niej by³o
+=======
+ *               zainicjalizowane lub gdy ju¿ wcze¶niej by³o 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
  *               zainicjalizowane.
  *  \retval false - gdy proces inicjalizacji po³±czenia zakoñczy³ siê
  *               niepowodzeniem.
@@ -172,14 +205,22 @@ namespace PzG {
   switch (fork()) {
     case -1: KomunikatBledu("### Niemozliwe rozwidlenie procesu.");
              exit(1);
+<<<<<<< HEAD
     case  0:
        /* Start potomka */
 
        if (close(STDIN) == -1) {
+=======
+    case  0: 
+       /* Start potomka */
+
+       if (close(STDIN) == -1) { 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
          KomunikatBledu("### Blad przy zamykaniu strumienia wejsciowego.");
          exit(1);
        }
        if (dup(outdesk[STDIN]) == -1) {
+<<<<<<< HEAD
          KomunikatBledu("### Blad duplikacji kanalu wejsciowego.");
          exit(1);
        }
@@ -193,6 +234,21 @@ namespace PzG {
          KomunikatBledu("### Blad duplikacji kanalu wyjsciowego.");
          exit(1);
        }
+=======
+         KomunikatBledu("### Blad duplikacji kanalu wejsciowego.");  
+         exit(1);
+       }
+       
+       if (close(STDOUT) == -1) { 
+         KomunikatBledu(
+            "### Blad zamkniecia kanalu standardowego kanalu wyjsciowego."); 
+         exit(1);
+       }
+       if (dup(indesk[STDOUT]) == -1) {
+         KomunikatBledu("### Blad duplikacji kanalu wyjsciowego.");  
+         exit(1);
+       }       
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
        if (close(outdesk[STDIN]) == -1) {
          KomunikatBledu("### Blad zamkniecia kanalu wejsciowego.");
          exit(1);
@@ -211,24 +267,42 @@ namespace PzG {
        }
        char Tab[3];
        read(STDIN,Tab,1);
+<<<<<<< HEAD
        write(STDOUT,"\n",1);
+=======
+       write(STDOUT,"\n",1); 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
        const char *Comm;
 
        execlp(Comm = "gnuplot","gnuplot",NULL);
 
+<<<<<<< HEAD
        KomunikatBledu("!!! Blad:");
        KomunikatBledu("!!! W procesie potomnym nie mogl zostac.");
        KomunikatBledu("!!! uruchomiony program gnuplot.");
        KomunikatBledu("!!! Nastapilo przerwanie dzialania procesu potomnego.");
        KomunikatBledu("!!! Jednym z mozliwych powodow problemu moze byc");
        KomunikatBledu("!!! Brak programu gnuplot w szukanej sciezce.");
+=======
+       KomunikatBledu("!!! Blad:"); 
+       KomunikatBledu("!!! W procesie potomnym nie mogl zostac."); 
+       KomunikatBledu("!!! uruchomiony program gnuplot."); 
+       KomunikatBledu("!!! Nastapilo przerwanie dzialania procesu potomnego."); 
+       KomunikatBledu("!!! Jednym z mozliwych powodow problemu moze byc"); 
+       KomunikatBledu("!!! Brak programu gnuplot w szukanej sciezce."); 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
        KomunikatBledu("!!! Do uruchomienia programu gnuplot bylo uzyte polecenie:");
        KomunikatBledu(Comm);
        exit(1);
 
     default:
+<<<<<<< HEAD
        if (close(outdesk[STDIN]) == -1 || close(indesk[STDOUT]) == -1) {
          KomunikatBledu(" Blad zamkniecia outpipe[STDIN], inpipe[STDOUT].");
+=======
+       if (close(outdesk[STDIN]) == -1 || close(indesk[STDOUT]) == -1) { 
+         KomunikatBledu(" Blad zamkniecia outpipe[STDIN], inpipe[STDOUT]."); 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
        }
 
        fcntl(indesk[STDIN],F_SETFL,O_NDELAY);
@@ -269,23 +343,39 @@ namespace PzG {
  * Tworzy napis bêd±cy parametrami dla polecenie \e plot programu,
  * \e gnuplot. Parametry te pozwalaj± na rysowanie bry³, których
  *  wspó³rzêdne wierzcho³ków zawarte s± w plikach.
+<<<<<<< HEAD
  *  Nazwy tych plików musz± byæ wcze¶niej do³±czone do kolejki
  *  plików poprzez zastosowanie polecenia
  *   \link LaczeDoGNUPlota::DodajNazwe DodajNazwe\endlink.
  *
+=======
+ *  Nazwy tych plików musz± byæ wcze¶niej do³±czone do kolejki 
+ *  plików poprzez zastosowanie polecenia
+ *   \link LaczeDoGNUPlota::DodajNazwe DodajNazwe\endlink.
+ *  
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
  * \param Polecenie - dopisywana jest do niego sekwencja znaków
  *                  tworz±cych parametry dla polecenia \e plot.
  * \param Sep - zawiera znak separatora miêdzy poszczególnymi
  *              parametrami. Je¿eli parametry listy nazw plików
+<<<<<<< HEAD
  *              s± generowane jako pierwsze, to zmienna ta musi
+=======
+ *              s± generowane jako pierwsze, to zmienna ta musi 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
  *              byæ wska¼nikiem do wska¼nika na ³añcuch: " ".
  * \retval true - je¶li lista nazw plików nie jest pusta.
  * \retval false - w przypadku przeciwnym.
  * \post Je¿eli  lista nazw plików nie jest pusta, to poprzez
  *              parametr \e Sep zostaje udostêpniony ³añcuch: ", ".
  */
+<<<<<<< HEAD
  bool LaczeDoGNUPlota::DopiszRysowanieZPlikow( std::string  &Polecenie,
                                                 char const **Sep
+=======
+ bool LaczeDoGNUPlota::DopiszRysowanieZPlikow( std::string  &Polecenie, 
+                                                char const **Sep 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
                                              )
  {
   if (_InfoPlikow.empty()) return false;
@@ -297,7 +387,11 @@ namespace PzG {
        Polecenie += *Sep;
        Polecenie += " \'";
        Polecenie += Nazwy->WezNazwePliku();
+<<<<<<< HEAD
        ((Polecenie += '\'') += " notitle ") +=
+=======
+       ((Polecenie += '\'') += " notitle ") += 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
        (Nazwy->WezRodzRys() == RR_Ciagly ? " w l" : " w p pt 5");
        if  (Nazwy->WezRodzRys() == RR_Ciagly) OSStrm << " lw " << Nazwy->WezSzerokosc();
                                          else OSStrm << " ps " << Nazwy->WezSzerokosc();
@@ -312,7 +406,11 @@ namespace PzG {
  //-------------------------------------------------------------------------
  //  Jezeli lista plikow nie jest pusta, to generuje sekwencje polecen
  //  dla programu gnuplot majaca na celu narysowanie plaszczyzn na
+<<<<<<< HEAD
  //  na podstawie danych zawartych w plikach z listy.
+=======
+ //  na podstawie danych zawartych w plikach z listy. 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
  //
  //  PRE:  Na liscie plikow nie powinna byc pusta. Nazwy plikow na niej
  //        mozna umiescic za pomoca metody 'DodajNazwe'.
@@ -386,7 +484,11 @@ namespace PzG {
                        "set parametric\n"
                        "set isosamples 9\n"
                        "set urange [-180:180]\n"
+<<<<<<< HEAD
                        "set vrange [-90:90]\n";
+=======
+                       "set vrange [-90:90]\n";  
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 
   if (_PokazOs_OX) Preambula += "set xzeroaxis lt 0 lw 1\n";
   if (_PokazOs_OY) Preambula += "set yzeroaxis lt 0 lw 1\n";
@@ -422,7 +524,11 @@ std::string LaczeDoGNUPlota::ZapiszUstawienieZakresu(char Os) const
 std::string LaczeDoGNUPlota::ZapiszUstawienieRotacjiISkali() const
 {
   ostringstream strm;
+<<<<<<< HEAD
   strm << "set view " << RotacjaX() << "," << RotacjaZ()
+=======
+  strm << "set view " << RotacjaX() << "," << RotacjaZ() 
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
        << "," << SkalaX() << "," << SkalaZ() << endl;
   return strm.str();
 }

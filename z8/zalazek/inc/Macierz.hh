@@ -21,6 +21,7 @@
  * Głównym elementem klasy jest szablony klasy Wektro którego parametrem jest drugi szablon klasy wektor
  */
 
+<<<<<<< HEAD
 template <class TYP, int ROZMIAR>
 class Macierz{
 
@@ -29,6 +30,18 @@ class Macierz{
    *\brief Kwadratowa macierz danych
    */
   Wektor<Wektor<TYP>(ROZMIAR)> A(ROZMIAR);
+=======
+template <class TYP>
+class Macierz{
+
+  public:
+
+
+  /*!
+   *\brief Kwadratowa macierz danych
+   */
+  Wektor<Wektor<TYP> > A;
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
   Macierz();
    ~Macierz();
 /*!
@@ -42,7 +55,11 @@ class Macierz{
  * Zwraca wektor wynikowy.
  *
  */
+<<<<<<< HEAD
   Wektor<TYP, ROZMIAR> operator*(Wektor<TYP, ROZMIAR> );
+=======
+  Wektor<TYP> operator*(Wektor<TYP> );
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 /*!
  *\brief Funkcja transponuje macierz
  *
@@ -50,7 +67,11 @@ class Macierz{
  *
  *\return transponowana macierz
  */
+<<<<<<< HEAD
   Macierz<TYP, ROZMIAR>Transponuj(void);
+=======
+  Macierz<TYP>Transponuj(void);
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
   protected:
   private:
 
@@ -75,8 +96,13 @@ class Macierz{
  * Referencja do strumienia, z którego wczytujemy dane
  *
  */
+<<<<<<< HEAD
 template <class TYP, int ROZMIAR>
 std::istream& operator >> (std::istream &Strm, Macierz<TYP, ROZMIAR> &Mac);
+=======
+template <class TYP>
+std::istream& operator >> (std::istream &Strm, Macierz<TYP> &Mac);
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 
 
  /*!
@@ -97,8 +123,13 @@ std::istream& operator >> (std::istream &Strm, Macierz<TYP, ROZMIAR> &Mac);
  * Referencja do strumienia, do którego wypisujemy dane
  *
  */
+<<<<<<< HEAD
 template <class TYP, int ROZMIAR>
 std::ostream& operator << (std::ostream &Strm, Macierz<TYP, ROZMIAR> &Mac);
+=======
+template <class TYP>
+std::ostream& operator << (std::ostream &Strm, Macierz<TYP> &Mac);
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 
 
 #endif

@@ -1,6 +1,10 @@
 var NAVTREE =
 [
+<<<<<<< HEAD
   [ "Uklad Rownan", "index.html", [
+=======
+  [ "My Project", "index.html", [
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
     [ "Program Oblicza układy równan", "index.html", null ],
     [ "Diagram klas", "strina-diagram-klas.html", null ],
     [ "Klasy", null, [
@@ -16,8 +20,12 @@ var NAVTREE =
       [ "Lista plików", "files.html", "files" ],
       [ "Składowe plików", "globals.html", [
         [ "All", "globals.html", null ],
+<<<<<<< HEAD
         [ "Funkcje", "globals_func.html", null ],
         [ "Definicje", "globals_defs.html", null ]
+=======
+        [ "Funkcje", "globals_func.html", null ]
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
       ] ]
     ] ]
   ] ]
@@ -25,11 +33,20 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
+<<<<<<< HEAD
 "_macierz_8cpp.html"
+=======
+"_macierz_8hh.html"
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
 var SYNCOFFMSG = 'click to enable panel synchronisation';
+<<<<<<< HEAD
+=======
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 var navTreeSubIndices = new Array();
 
 function getData(varName)
@@ -110,12 +127,21 @@ function createIndent(o,domNode,node,level)
   var level=-1;
   var n = node;
   while (n.parentNode) { level++; n=n.parentNode; }
+<<<<<<< HEAD
   var imgNode = document.createElement("img");
   imgNode.style.paddingLeft=(16*level).toString()+'px';
   imgNode.width  = 16;
   imgNode.height = 22;
   imgNode.border = 0;
   if (node.childrenData) {
+=======
+  if (node.childrenData) {
+    var imgNode = document.createElement("img");
+    imgNode.style.paddingLeft=(16*level).toString()+'px';
+    imgNode.width  = 16;
+    imgNode.height = 22;
+    imgNode.border = 0;
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
     node.plus_img = imgNode;
     node.expandToggle = document.createElement("a");
     node.expandToggle.href = "javascript:void(0)";
@@ -132,8 +158,17 @@ function createIndent(o,domNode,node,level)
     domNode.appendChild(node.expandToggle);
     imgNode.src = node.relpath+"ftv2pnode.png";
   } else {
+<<<<<<< HEAD
     imgNode.src = node.relpath+"ftv2node.png";
     domNode.appendChild(imgNode);
+=======
+    var span = document.createElement("span");
+    span.style.display = 'inline-block';
+    span.style.width   = 16*(level+1)+'px';
+    span.style.height  = '22px';
+    span.innerHTML = '&#160;';
+    domNode.appendChild(span);
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
   } 
 }
 
@@ -352,7 +387,11 @@ function showNode(o, node, index, hash)
       if (!node.childrenVisited) {
         getNode(o, node);
       }
+<<<<<<< HEAD
       $(node.getChildrenUL()).show();
+=======
+      $(node.getChildrenUL()).css({'display':'block'});
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
       if (node.isLast) {
         node.plus_img.src = node.relpath+"ftv2mlastnode.png";
       } else {
@@ -384,8 +423,27 @@ function showNode(o, node, index, hash)
   }
 }
 
+<<<<<<< HEAD
 function getNode(o, po)
 {
+=======
+function removeToInsertLater(element) {
+  var parentNode = element.parentNode;
+  var nextSibling = element.nextSibling;
+  parentNode.removeChild(element);
+  return function() {
+    if (nextSibling) {
+      parentNode.insertBefore(element, nextSibling);
+    } else {
+      parentNode.appendChild(element);
+    }
+  };
+}
+
+function getNode(o, po)
+{
+  var insertFunction = removeToInsertLater(po.li);
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
   po.childrenVisited = true;
   var l = po.childrenData.length-1;
   for (var i in po.childrenData) {
@@ -393,6 +451,10 @@ function getNode(o, po)
     po.children[i] = newNode(o, po, nodeData[0], nodeData[1], nodeData[2],
       i==l);
   }
+<<<<<<< HEAD
+=======
+  insertFunction();
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 }
 
 function gotoNode(o,subIndex,root,hash,relpath)
@@ -496,7 +558,14 @@ function initNavTree(toroot,relpath)
     navSync.click(function(){ toggleSyncButton(relpath); });
   }
 
+<<<<<<< HEAD
   navTo(o,toroot,window.location.hash,relpath);
+=======
+  $(window).load(function(){
+    navTo(o,toroot,window.location.hash,relpath);
+    showRoot();
+  });
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 
   $(window).bind('hashchange', function(){
      if (window.location.hash && window.location.hash.length>1){
@@ -519,7 +588,10 @@ function initNavTree(toroot,relpath)
        navTo(o,toroot,window.location.hash,relpath);
      }
   })
+<<<<<<< HEAD
 
   $(window).load(showRoot);
+=======
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 }
 

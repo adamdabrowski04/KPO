@@ -1,4 +1,9 @@
 <map id="operator/" name="operator/">
+<<<<<<< HEAD
 <area shape="rect" id="node3" href="$zespolone_8hh.html#adc64abc57279e1fa7eadcfe3373cc97e" title="Liczba sprzężona. " alt="" coords="128,5,211,35"/>
 <area shape="rect" id="node5" href="$zespolone_8hh.html#a8095292cb2619d04c169673a00383721" title="Moduł " alt="" coords="141,59,197,88"/>
+=======
+<area shape="rect" id="node2" href="$zespolone_8cpp.html#adc64abc57279e1fa7eadcfe3373cc97e" title="Liczba sprzężona. " alt="" coords="128,5,211,32"/>
+<area shape="rect" id="node3" href="$zespolone_8cpp.html#a8095292cb2619d04c169673a00383721" title="Moduł " alt="" coords="141,56,198,83"/>
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 </map>

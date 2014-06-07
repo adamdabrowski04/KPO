@@ -77,6 +77,7 @@ function initResizable()
   var _preventDefault = function(evt) { evt.preventDefault(); };
   $("#splitbar").bind("dragstart", _preventDefault).bind("selectstart", _preventDefault);
   $(document).bind('touchmove',function(e){
+<<<<<<< HEAD
     try {
       var target = e.target;
       while (target) {
@@ -86,6 +87,21 @@ function initResizable()
       e.preventDefault();
     } catch(err) {
       e.preventDefault();
+=======
+    var device = navigator.userAgent.toLowerCase();
+    var ios = device.match(/(iphone|ipod|ipad)/);
+    if (ios) {
+      try {
+        var target = e.target;
+        while (target) {
+          if ($(target).css('-webkit-overflow-scrolling')=='touch') return;
+          target = target.parentNode;
+        }
+        e.preventDefault();
+      } catch(err) {
+        e.preventDefault();
+      }
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
     }
   });
 }

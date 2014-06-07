@@ -27,7 +27,11 @@ class Wektor {
    *  Tutaj trzeba wstawic definicje odpowiednich pol i metod prywatnych
    */
   public:
+<<<<<<< HEAD
 
+=======
+static int iloscWywolan;
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 /*!
  * \brief Konstruktor z parametrem domniemanym klasy Wektor
  *
@@ -42,7 +46,11 @@ class Wektor {
  * \return
  * BRAK
  */
+<<<<<<< HEAD
   Wektor(int ROZMIAR);
+=======
+  Wektor();
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 /*!
  * \brief Konstruktor kopjujący
  *
@@ -167,6 +175,7 @@ Wektor operator/(TYP)const;
  * \brief Wskaźnik pokazujący na tablicę danych
  *
  */
+<<<<<<< HEAD
  TYP *pTab;
 
   protected:
@@ -175,6 +184,15 @@ Wektor operator/(TYP)const;
   const int ROZMIAR;
 };
 
+=======
+ //vector<TYP> pTab;
+    TYP *pTab;
+  protected:
+
+  private:
+};
+template <class TYP> int Wektor<TYP>::iloscWywolan=0;
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 
 
  /*!

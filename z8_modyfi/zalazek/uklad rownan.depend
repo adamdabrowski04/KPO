@@ -1,0 +1,462 @@
+# depslib dependency file v1.0
+1396870459 source:/home/adam/Desktop/zad/z4/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+
+1396870282 /home/adam/Desktop/zad/z4/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1396858438 /home/adam/Desktop/zad/z4/zalazek/inc/rozmiar.h
+
+1396868341 source:/home/adam/Desktop/zad/z4/zalazek/src/main.cpp
+	<iostream>
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/UkladRownanLiniowych.hh"
+
+1396870370 /home/adam/Desktop/zad/z4/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+
+1396858438 /home/adam/Desktop/zad/z4/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+
+1396862249 source:/home/adam/Desktop/zad/z4/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1396870542 source:/home/adam/Desktop/zad/z4/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1398680225 source:/home/adam/Desktop/KPO/z4/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1398681506 /home/adam/Desktop/KPO/z4/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+	<cmath>
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/rozmiar.h"
+
+1398677489 source:/home/adam/Desktop/KPO/z4/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+
+1398672414 /home/adam/Desktop/KPO/z4/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1398677678 /home/adam/Desktop/KPO/z4/zalazek/inc/rozmiar.h
+
+1398673619 /home/adam/Desktop/KPO/z4/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+	<vector>
+
+1398681470 source:/home/adam/Desktop/KPO/z4/zalazek/src/main.cpp
+	<iostream>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+
+1398677509 /home/adam/Desktop/KPO/z4/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1398677489 /home/adam/Desktop/KPO/z4/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+
+1398680225 /home/adam/Desktop/KPO/z4/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1398677509 source:/home/adam/Desktop/KPO/z4/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1398677523 source:/home/adam/Desktop/KPO/z4/zalazek/src/zespolone.cpp
+	<iostream>
+	<string>
+	<limits>
+	<cmath>
+	"../inc/zespolone.hh"
+
+1398677440 /home/adam/Desktop/KPO/z4/zalazek/inc/zespolone.hh
+
+1399537569 source:/home/adam/Desktop/KPO/z6/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+
+1399537569 /home/adam/Desktop/KPO/z6/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1399537569 /home/adam/Desktop/KPO/z6/zalazek/inc/rozmiar.h
+
+1399537569 /home/adam/Desktop/KPO/z6/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+	<vector>
+
+1399827684 source:/home/adam/Desktop/KPO/z6/zalazek/src/main.cpp
+	<iostream>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	"../inc/RozpoznajProblem.hh"
+
+1399537569 /home/adam/Desktop/KPO/z6/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399537569 /home/adam/Desktop/KPO/z6/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+
+1399823432 /home/adam/Desktop/KPO/z6/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1399823620 /home/adam/Desktop/KPO/z6/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+	<cmath>
+	<string>
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/rozmiar.h"
+
+1399537569 /home/adam/Desktop/KPO/z6/zalazek/inc/zespolone.hh
+
+1399823432 source:/home/adam/Desktop/KPO/z6/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1399537569 source:/home/adam/Desktop/KPO/z6/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399537569 source:/home/adam/Desktop/KPO/z6/zalazek/src/zespolone.cpp
+	<iostream>
+	<string>
+	<limits>
+	<cmath>
+	"../inc/zespolone.hh"
+
+1399823649 source:/home/adam/Desktop/KPO/z6/zalazek/src/RozpoznajProblem.cpp
+	"../inc/RozpoznajProblem.hh"
+
+1399823620 /home/adam/Desktop/KPO/z6/zalazek/inc/RozpoznajProblem.hh
+	<iostream>
+
+1399846724 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+
+1399846456 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1399537569 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/rozmiar.h
+
+1399877735 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+	<vector>
+
+1399875175 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/main.cpp
+	<iostream>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	"../inc/RozpoznajProblem.hh"
+
+1399877545 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399846724 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+
+1399846457 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1399846527 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+	<cmath>
+	<string>
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/rozmiar.h"
+
+1399537569 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/zespolone.hh
+
+1399875232 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/RozpoznajProblem.hh
+	<iostream>
+
+1399846457 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1399537569 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/zespolone.cpp
+	<iostream>
+	<string>
+	<limits>
+	<cmath>
+	"../inc/zespolone.hh"
+
+1399846607 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/RozpoznajProblem.cpp
+	"../inc/RozpoznajProblem.hh"
+	<iostream>
+	<string>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+
+1399875897 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399878844 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+	"../inc/rozmiar.h"
+
+1399878735 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1399878289 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/rozmiar.h
+
+1399878758 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+	<vector>
+
+1399878289 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/main.cpp
+	<iostream>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	"../inc/RozpoznajProblem.hh"
+
+1399878855 /home/adam/Desktop/KPO/Z8_v2/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399878844 /home/adam/Desktop/KPO/Z8_v2/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+	"../inc/rozmiar.h"
+
+1399878831 /home/adam/Desktop/KPO/Z8_v2/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+	"../inc/rozmiar.h"
+
+1399878735 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+	<cmath>
+	<string>
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/rozmiar.h"
+
+1399537569 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/zespolone.hh
+
+1399875232 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/RozpoznajProblem.hh
+	<iostream>
+
+1399880389 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/RozpoznajProblem.cpp
+	"../inc/RozpoznajProblem.hh"
+	<iostream>
+	<string>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	<unistd.h>
+
+1399878831 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+	"../inc/rozmiar.h"
+
+1399878855 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399537569 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/zespolone.cpp
+	<iostream>
+	<string>
+	<limits>
+	<cmath>
+	"../inc/zespolone.hh"
+
+1399878844 source:/home/adam/Desktop/KPO/z8/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+	"../inc/rozmiar.h"
+
+1399878734 /home/adam/Desktop/KPO/z8/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1399878288 /home/adam/Desktop/KPO/z8/zalazek/inc/rozmiar.h
+
+1399878758 /home/adam/Desktop/KPO/z8/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+	<vector>
+
+1400459761 source:/home/adam/Desktop/KPO/z8/zalazek/src/main.cpp
+	<iostream>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	"../inc/RozpoznajProblem.hh"
+	<fstream>
+	<string>
+
+1399878854 /home/adam/Desktop/KPO/z8/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399878844 /home/adam/Desktop/KPO/z8/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+	"../inc/rozmiar.h"
+
+1399878830 /home/adam/Desktop/KPO/z8/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+	"../inc/rozmiar.h"
+
+1399878734 /home/adam/Desktop/KPO/z8/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+	<cmath>
+	<string>
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/rozmiar.h"
+
+1399537568 /home/adam/Desktop/KPO/z8/zalazek/inc/zespolone.hh
+
+1400460293 /home/adam/Desktop/KPO/z8/zalazek/inc/RozpoznajProblem.hh
+	<iostream>
+	<fstream>
+	<string>
+
+1399878830 source:/home/adam/Desktop/KPO/z8/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+	"../inc/rozmiar.h"
+
+1399878854 source:/home/adam/Desktop/KPO/z8/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399537568 source:/home/adam/Desktop/KPO/z8/zalazek/src/zespolone.cpp
+	<iostream>
+	<string>
+	<limits>
+	<cmath>
+	"../inc/zespolone.hh"
+
+1400460293 source:/home/adam/Desktop/KPO/z8/zalazek/src/RozpoznajProblem.cpp
+	"../inc/RozpoznajProblem.hh"
+	<iostream>
+	<string>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	<unistd.h>
+	<fstream>
+
+1399878844 source:/home/adam/Desktop/KPO/z8_modyfi/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+	"../inc/rozmiar.h"
+
+1399878734 /home/adam/Desktop/KPO/z8_modyfi/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1399878288 /home/adam/Desktop/KPO/z8_modyfi/zalazek/inc/rozmiar.h
+
+1400499425 /home/adam/Desktop/KPO/z8_modyfi/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+	<vector>
+
+1400460642 source:/home/adam/Desktop/KPO/z8_modyfi/zalazek/src/main.cpp
+	<iostream>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	"../inc/RozpoznajProblem.hh"
+	<fstream>
+	<string>
+
+1400499628 /home/adam/Desktop/KPO/z8_modyfi/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399878844 /home/adam/Desktop/KPO/z8_modyfi/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+	"../inc/rozmiar.h"
+
+1399878830 /home/adam/Desktop/KPO/z8_modyfi/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+	"../inc/rozmiar.h"
+
+1399878734 /home/adam/Desktop/KPO/z8_modyfi/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+	<cmath>
+	<string>
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/rozmiar.h"
+
+1399537568 /home/adam/Desktop/KPO/z8_modyfi/zalazek/inc/zespolone.hh
+
+1400460293 /home/adam/Desktop/KPO/z8_modyfi/zalazek/inc/RozpoznajProblem.hh
+	<iostream>
+	<fstream>
+	<string>
+
+1400460293 source:/home/adam/Desktop/KPO/z8_modyfi/zalazek/src/RozpoznajProblem.cpp
+	"../inc/RozpoznajProblem.hh"
+	<iostream>
+	<string>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	<unistd.h>
+	<fstream>
+
+1399878830 source:/home/adam/Desktop/KPO/z8_modyfi/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+	"../inc/rozmiar.h"
+
+1399537568 source:/home/adam/Desktop/KPO/z8_modyfi/zalazek/src/zespolone.cpp
+	<iostream>
+	<string>
+	<limits>
+	<cmath>
+	"../inc/zespolone.hh"
+

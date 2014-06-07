@@ -150,3 +150,237 @@
 1399823620 /home/adam/Desktop/KPO/z6/zalazek/inc/RozpoznajProblem.hh
 	<iostream>
 
+<<<<<<< HEAD
+=======
+1399846724 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+
+1399846456 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1399537569 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/rozmiar.h
+
+1399877735 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+	<vector>
+
+1399875175 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/main.cpp
+	<iostream>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	"../inc/RozpoznajProblem.hh"
+
+1399877545 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399846724 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+
+1399846457 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1399846527 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+	<cmath>
+	<string>
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/rozmiar.h"
+
+1399537569 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/zespolone.hh
+
+1399875232 /home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/inc/RozpoznajProblem.hh
+	<iostream>
+
+1399846457 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+
+1399537569 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/zespolone.cpp
+	<iostream>
+	<string>
+	<limits>
+	<cmath>
+	"../inc/zespolone.hh"
+
+1399846607 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/RozpoznajProblem.cpp
+	"../inc/RozpoznajProblem.hh"
+	<iostream>
+	<string>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+
+1399875897 source:/home/adam/Desktop/KPO/Z8_WEKTOR/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399878844 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+	"../inc/rozmiar.h"
+
+1399878735 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1399878289 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/rozmiar.h
+
+1399878758 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+	<vector>
+
+1399878289 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/main.cpp
+	<iostream>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	"../inc/RozpoznajProblem.hh"
+
+1399878855 /home/adam/Desktop/KPO/Z8_v2/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399878844 /home/adam/Desktop/KPO/Z8_v2/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+	"../inc/rozmiar.h"
+
+1399878831 /home/adam/Desktop/KPO/Z8_v2/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+	"../inc/rozmiar.h"
+
+1399878735 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+	<cmath>
+	<string>
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/rozmiar.h"
+
+1399537569 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/zespolone.hh
+
+1399875232 /home/adam/Desktop/KPO/Z8_v2/zalazek/inc/RozpoznajProblem.hh
+	<iostream>
+
+1399880389 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/RozpoznajProblem.cpp
+	"../inc/RozpoznajProblem.hh"
+	<iostream>
+	<string>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	<unistd.h>
+
+1399878831 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+	"../inc/rozmiar.h"
+
+1399878855 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399537569 source:/home/adam/Desktop/KPO/Z8_v2/zalazek/src/zespolone.cpp
+	<iostream>
+	<string>
+	<limits>
+	<cmath>
+	"../inc/zespolone.hh"
+
+1399878844 source:/home/adam/Desktop/KPO/z8/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+	"../inc/rozmiar.h"
+
+1399878734 /home/adam/Desktop/KPO/z8/zalazek/inc/Macierz.hh
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	<iostream>
+
+1399878288 /home/adam/Desktop/KPO/z8/zalazek/inc/rozmiar.h
+
+1400501134 /home/adam/Desktop/KPO/z8/zalazek/inc/Wektor.hh
+	"../inc/rozmiar.h"
+	<iostream>
+	<vector>
+
+1400460642 source:/home/adam/Desktop/KPO/z8/zalazek/src/main.cpp
+	<iostream>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	"../inc/RozpoznajProblem.hh"
+	<fstream>
+	<string>
+
+1400502082 /home/adam/Desktop/KPO/z8/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399878844 /home/adam/Desktop/KPO/z8/zalazek/src/Macierz.cpp
+	"../inc/Macierz.hh"
+	"../inc/Wektor.hh"
+	"../inc/rozmiar.h"
+
+1400502304 /home/adam/Desktop/KPO/z8/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+	"../inc/rozmiar.h"
+
+1399878734 /home/adam/Desktop/KPO/z8/zalazek/inc/UkladRownanLiniowych.hh
+	<iostream>
+	<cmath>
+	<string>
+	"../inc/rozmiar.h"
+	"../inc/Wektor.hh"
+	"../inc/Macierz.hh"
+	"../inc/rozmiar.h"
+
+1399537568 /home/adam/Desktop/KPO/z8/zalazek/inc/zespolone.hh
+
+1400500169 /home/adam/Desktop/KPO/z8/zalazek/inc/RozpoznajProblem.hh
+	<iostream>
+	<fstream>
+	<string>
+
+1400502304 source:/home/adam/Desktop/KPO/z8/zalazek/src/UkladRownanLiniowych.cpp
+	"../inc/UkladRownanLiniowych.hh"
+	"../inc/rozmiar.h"
+
+1400502082 source:/home/adam/Desktop/KPO/z8/zalazek/src/Wektor.cpp
+	"../inc/Wektor.hh"
+
+1399537568 source:/home/adam/Desktop/KPO/z8/zalazek/src/zespolone.cpp
+	<iostream>
+	<string>
+	<limits>
+	<cmath>
+	"../inc/zespolone.hh"
+
+1400501576 source:/home/adam/Desktop/KPO/z8/zalazek/src/RozpoznajProblem.cpp
+	"../inc/RozpoznajProblem.hh"
+	<iostream>
+	<string>
+	"../src/Wektor.cpp"
+	"../src/Macierz.cpp"
+	"../src/UkladRownanLiniowych.cpp"
+	"../inc/rozmiar.h"
+	"../inc/zespolone.hh"
+	<unistd.h>
+	<fstream>
+
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2

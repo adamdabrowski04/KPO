@@ -1,0 +1,11 @@
+MaicierzA^T
+1 0 
+1 1 
+Wektor wyrazow wolnych b:
+1 1 
+MaicierzLU
+1 1 
+0 1 
+Rozwiazanie x= x1 x2 
+( 0 1  )
+Dlugosc wektora Bledu:  0

@@ -12,6 +12,10 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+<<<<<<< HEAD
+=======
+					<Add option="-std=c++11" />
+>>>>>>> 20f29c3d31f058ede2849f8c385bdb0d982face2
 					<Add option="-g" />
 				</Compiler>
 			</Target>
