@@ -1,0 +1,163 @@
+# depslib dependency file v1.0
+1401090847 source:/home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/src/lacze_do_gnuplota.cpp
+	<cstdio>
+	<cstring>
+	<cmath>
+	<iostream>
+	<sys/stat.h>
+	<unistd.h>
+	<cstdlib>
+	<fcntl.h>
+	<sstream>
+	"../inc/lacze_do_gnuplota.hh"
+
+1400429469 /home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/inc/lacze_do_gnuplota.hh
+	<string>
+	<list>
+	<vector>
+
+1401099721 source:/home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/src/Manipulator.cpp
+	"../include/Manipulator.h"
+	"../include/ogniwo.h"
+	<string>
+	<fstream>
+	<iomanip>
+	<iostream>
+	<cmath>
+
+1401100822 /home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/include/Manipulator.h
+	<vector>
+	<string>
+	"../include/ogniwo.h"
+
+1401100822 /home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/include/ogniwo.h
+	<vector>
+
+1401094151 source:/home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/src/ogniwo.cpp
+	"../include/ogniwo.h"
+	<cmath>
+
+1401099603 source:/home/adam/Desktop/KPO/z-manipulator1/przyklad_2D/src/start.cpp
+	<iostream>
+	<iomanip>
+	"../inc/lacze_do_gnuplota.hh"
+	"../include/Manipulator.h"
+	<string>
+	<unistd.h>
+
+1401090846 source:/home/adam/Desktop/KPO/z-manipulator1_gotowy/przyklad_2D/src/lacze_do_gnuplota.cpp
+	<cstdio>
+	<cstring>
+	<cmath>
+	<iostream>
+	<sys/stat.h>
+	<unistd.h>
+	<cstdlib>
+	<fcntl.h>
+	<sstream>
+	"../inc/lacze_do_gnuplota.hh"
+
+1400429468 /home/adam/Desktop/KPO/z-manipulator1_gotowy/przyklad_2D/inc/lacze_do_gnuplota.hh
+	<string>
+	<list>
+	<vector>
+
+1401099720 source:/home/adam/Desktop/KPO/z-manipulator1_gotowy/przyklad_2D/src/Manipulator.cpp
+	"../include/Manipulator.h"
+	"../include/ogniwo.h"
+	<string>
+	<fstream>
+	<iomanip>
+	<iostream>
+	<cmath>
+
+1401102316 /home/adam/Desktop/KPO/z-manipulator1_gotowy/przyklad_2D/include/Manipulator.h
+	<vector>
+	<string>
+	"../include/ogniwo.h"
+
+1401100822 /home/adam/Desktop/KPO/z-manipulator1_gotowy/przyklad_2D/include/ogniwo.h
+	<vector>
+
+1401094150 source:/home/adam/Desktop/KPO/z-manipulator1_gotowy/przyklad_2D/src/ogniwo.cpp
+	"../include/ogniwo.h"
+	<cmath>
+
+1401100822 source:/home/adam/Desktop/KPO/z-manipulator1_gotowy/przyklad_2D/src/start.cpp
+	<iostream>
+	<iomanip>
+	"../inc/lacze_do_gnuplota.hh"
+	"../include/Manipulator.h"
+	<string>
+	<unistd.h>
+
+1402175304 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/lacze_do_gnuplota.cpp
+	<cstdio>
+	<cstring>
+	<cmath>
+	<iostream>
+	<sys/stat.h>
+	<unistd.h>
+	<cstdlib>
+	<fcntl.h>
+	<sstream>
+	<string>
+	"../inc/lacze_do_gnuplota.hh"
+
+1402171608 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/inc/lacze_do_gnuplota.hh
+	<string>
+	<list>
+	<vector>
+
+1402171608 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/ogniwo.cpp
+	"../include/ogniwo.h"
+	<cmath>
+
+1402178825 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/ogniwo.h
+	<vector>
+
+1402309183 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/start.cpp
+	<iostream>
+	<iomanip>
+	"../inc/lacze_do_gnuplota.hh"
+	"../include/Manipulator.h"
+	"../include/Scena.h"
+	<string>
+	<unistd.h>
+
+1402307711 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/Manipulator.h
+	<vector>
+	<string>
+	"../include/ogniwo.h"
+	"../include/ZlozonyObiektGeometryczny.h"
+
+1402307656 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/Manipulator.cpp
+	"../include/Manipulator.h"
+	"../include/ogniwo.h"
+	<string>
+	<fstream>
+	<iomanip>
+	<iostream>
+	<cmath>
+
+1402307753 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/Scena.cpp
+	"../include/Scena.h"
+	<fstream>
+	<iostream>
+
+1402309479 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/Scena.h
+	"../include/Manipulator.h"
+	"../inc/lacze_do_gnuplota.hh"
+	<vector>
+
+1402171608 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/Wielobok.cpp
+	"Wielobok.h"
+
+1402265424 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/Wielobok.h
+	"../include/ZlozonyObiektGeometryczny.h"
+
+1402171608 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/ZlozonyObiektGeometryczny.cpp
+	"ZlozonyObiektGeometryczny.h"
+
+1402171608 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/ZlozonyObiektGeometryczny.h
+
