@@ -116,16 +116,17 @@
 1402178825 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/ogniwo.h
 	<vector>
 
-1402309183 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/start.cpp
+1402935337 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/start.cpp
 	<iostream>
 	<iomanip>
 	"../inc/lacze_do_gnuplota.hh"
 	"../include/Manipulator.h"
 	"../include/Scena.h"
+	"../include/ZlozonyObiektGeometryczny.h"
 	<string>
 	<unistd.h>
 
-1402307711 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/Manipulator.h
+1402931858 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/Manipulator.h
 	<vector>
 	<string>
 	"../include/ogniwo.h"
@@ -140,24 +141,35 @@
 	<iostream>
 	<cmath>
 
-1402307753 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/Scena.cpp
+1402935268 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/Scena.cpp
 	"../include/Scena.h"
 	<fstream>
 	<iostream>
+	<sstream>
 
-1402309479 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/Scena.h
+1402933309 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/Scena.h
+	"../include/Wielobok.h"
 	"../include/Manipulator.h"
 	"../inc/lacze_do_gnuplota.hh"
+	"../include/ZlozonyObiektGeometryczny.h"
 	<vector>
 
-1402171608 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/Wielobok.cpp
-	"Wielobok.h"
+1402935370 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/Wielobok.cpp
+	"../include/Wielobok.h"
+	<string>
+	<fstream>
+	<iomanip>
+	<iostream>
+	<cmath>
 
-1402265424 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/Wielobok.h
+1402934920 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/Wielobok.h
 	"../include/ZlozonyObiektGeometryczny.h"
+	<string>
+	<vector>
 
 1402171608 source:/home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/src/ZlozonyObiektGeometryczny.cpp
 	"ZlozonyObiektGeometryczny.h"
 
-1402171608 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/ZlozonyObiektGeometryczny.h
+1402933322 /home/adam/Desktop/KPO/z-manipulator1_V2/przyklad_2D/include/ZlozonyObiektGeometryczny.h
+	<string>
 

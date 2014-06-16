@@ -1,5 +1,7 @@
-M: scena_M/manip1.dat (-100 0) scena_M/konf_manip1.dat scena_M/postura_manip1.dat
-M: scena_M/manip2.dat  (100 0)  scena_M/konf_manip2.dat scena_M/postura_manip2.dat
-M: scena_M/manip3.dat  (130 0) scena_M/konf_manip3.dat scena_M/postura_manip3.dat
+M: scena_M/manip1.dat ( -100 0 ) scena_M/konf_manip1.dat scena_M/postura_manip1.dat
+M: scena_M/manip2.dat  ( 100 0 )  scena_M/konf_manip2.dat scena_M/postura_manip2.dat
+W: scena_M/Przeszkoda_A (20 0) (20 20) (40 20) (40 0)
+M: scena_M/manip3.dat  ( 130 0 ) scena_M/konf_manip3.dat scena_M/postura_manip3.dat
+W: scena_M/Przeszkoda_B (20 40) (20 80) (40 80) (40 40)
 
 

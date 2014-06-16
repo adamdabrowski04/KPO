@@ -9,7 +9,7 @@ using namespace std;
 class Manipulator: public ZlozonyObiektGeometryczny
 {
     public:
-    string nazwa;
+   // string nazwa;
     friend bool czy_kolizja_manipulatorem_z_manipulatorem(Manipulator pierwszy,Manipulator drugi);
     double zamocowanie_x, zamocowanie_y;
     virtual const char* TypPrzeszkoday(){return"Manipulator";}

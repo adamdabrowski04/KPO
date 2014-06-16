@@ -1,7 +1,9 @@
 #ifndef SCENA_H
 #define SCENA_H
+#include "../include/Wielobok.h"
 #include "../include/Manipulator.h"
 #include "../inc/lacze_do_gnuplota.hh"
+#include "../include/ZlozonyObiektGeometryczny.h"
 #include<vector>
 using namespace std;
 
@@ -26,6 +28,8 @@ class Scena
      */
     bool czy_kolizja_na_scenie(void);
     vector<Manipulator> lista_manipulatorow;
+    vector<Wielobok>    lista_wielobokow;
+    vector<ZlozonyObiektGeometryczny*> lista_wskaznikow;
     Manipulator glowny_manipulator;
 
     /*!

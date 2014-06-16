@@ -1,6 +1,6 @@
 #ifndef ZLOZONYOBIEKTGEOMETRYCZNY_H
 #define ZLOZONYOBIEKTGEOMETRYCZNY_H
-
+#include<string>
 
 class ZlozonyObiektGeometryczny
 {
@@ -8,6 +8,7 @@ class ZlozonyObiektGeometryczny
         virtual const char* TypPrzeszkody()const {return "ObiektGeometryczny"; }
         ZlozonyObiektGeometryczny();
         virtual ~ZlozonyObiektGeometryczny();
+       std:: string nazwa;
     protected:
     private:
 };

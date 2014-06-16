@@ -3,6 +3,7 @@
 #include "../inc/lacze_do_gnuplota.hh"
 #include "../include/Manipulator.h"
 #include "../include/Scena.h"
+#include "../include/ZlozonyObiektGeometryczny.h"
 #include<string>
 #include<unistd.h>
 using namespace std;
@@ -20,7 +21,8 @@ int main(int argc, char* argv[])
   irb1400.UstawPozycjeStartowa();
   irb1400.ZapiszWierzcholkiDoPliku("irb1400.dat");
   irb1400.WypiszKonfiguracje();
- // fabryka.RysujScene(Lacze);
+
+  //fabryka.RysujScene(&Lacze);
 
       //for(vector<Manipulator>::iterator it =fabryka.lista_manipulatorow.begin();
         //it!=fabryka.lista_manipulatorow.end(); it++)
@@ -30,6 +32,23 @@ int main(int argc, char* argv[])
         Lacze.DodajNazwePliku( (fabryka.lista_manipulatorow[i]).nazwa.c_str(),PzG::RR_Ciagly,6);
         Lacze.DodajNazwePliku((fabryka.lista_manipulatorow[i]).nazwa.c_str(),PzG::RR_Punktowy,2);
 
+    }
+        for(unsigned int i=0; i<fabryka.lista_wielobokow.size();i++)
+    {
+
+        Lacze.DodajNazwePliku( (fabryka.lista_wielobokow[i]).nazwa.c_str(),PzG::RR_Ciagly,6);
+        Lacze.DodajNazwePliku((fabryka.lista_wielobokow[i]).nazwa.c_str(),PzG::RR_Punktowy,2);
+
+    }
+    cout<<"Rozmiar fabryki: "<<fabryka.lista_wskaznikow.size()<<endl;
+    for(vector<ZlozonyObiektGeometryczny*>::iterator it =fabryka.lista_wskaznikow.begin();
+        it!=fabryka.lista_wskaznikow.end(); it++)
+    {
+//    cout<<"tutaj blad"<<endl;
+//        Lacze.DodajNazwePliku((**it).nazwa.c_str(),PzG::RR_Ciagly,6);
+//        Lacze.DodajNazwePliku((**it).nazwa.c_str(),PzG::RR_Punktowy,2);
+
+       (**it).TypPrzeszkody();
     }
   Lacze.DodajNazwePliku("irb1400.dat",PzG::RR_Ciagly,6);
   Lacze.DodajNazwePliku("irb1400.dat",PzG::RR_Punktowy,2);
