@@ -48,7 +48,7 @@ int main(int argc, char* argv[])
 //        Lacze.DodajNazwePliku((**it).nazwa.c_str(),PzG::RR_Ciagly,6);
 //        Lacze.DodajNazwePliku((**it).nazwa.c_str(),PzG::RR_Punktowy,2);
 
-       (**it).TypPrzeszkody();
+      // (**it).TypPrzeszkody();
     }
   Lacze.DodajNazwePliku("irb1400.dat",PzG::RR_Ciagly,6);
   Lacze.DodajNazwePliku("irb1400.dat",PzG::RR_Punktowy,2);
